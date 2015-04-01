@@ -6,7 +6,7 @@ angular.module('test', ['mongolabResourceHttp'])
 
 describe('mongolabResourceHttp', function () {
 
-    var MONGLAB_DB_URL_PREFIX = 'https://api.mongolab.com/api/1/databases/testdb/';
+    var MONGLAB_DB_URL_PREFIX = 'mongodb://heroku_app35440703:a51rcnvt4iosngchtjvrdrr0s0@ds049641.mongolab.com:49641/heroku_app35440703';
 
     var Project;
     var testProject = {'_id': {'$oid': 1}, 'key': 'value'};
