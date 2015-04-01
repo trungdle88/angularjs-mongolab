@@ -1,12 +1,12 @@
 angular.module('test', ['mongolabResourceHttp'])
-    .constant('MONGOLAB_CONFIG', {API_KEY: 'testkey', DB_NAME: 'testdb'})
+    .constant('MONGOLAB_CONFIG', {API_KEY: 'BbCi5Hs-Z33fpKbar9KtwtbSXmQyuTN2', DB_NAME: 'heroku_app35440703'})
     .factory('Project', function ($mongolabResourceHttp) {
         return $mongolabResourceHttp('projects');
     });
-
+heroku_app35440703
 describe('mongolabResourceHttp', function () {
 
-    var MONGLAB_DB_URL_PREFIX = 'mongodb://heroku_app35440703:a51rcnvt4iosngchtjvrdrr0s0@ds049641.mongolab.com:49641/heroku_app35440703';
+    var MONGLAB_DB_URL_PREFIX = 'https://api.mongolab.com/api/1/databases/heroku_app35440703/';
 
     var Project;
     var testProject = {'_id': {'$oid': 1}, 'key': 'value'};
